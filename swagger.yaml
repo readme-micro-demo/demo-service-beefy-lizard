@@ -687,6 +687,7 @@ components:
             - available
             - pending
             - sold
+            - add me
       xml:
         name: Pet
     ApiResponse:

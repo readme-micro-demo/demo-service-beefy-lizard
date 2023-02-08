@@ -34,7 +34,7 @@ paths:
     post:
       tags:
         - pet
-      summary: Add a new pet to the store
+      summary: Add a new pet to the stores
       description: ''
       operationId: addPet
       requestBody:
@@ -69,14 +69,14 @@ paths:
     get:
       tags:
         - pet
-      summary: Finds Pets by status
+      summary: Finds Pet by status
       description: Multiple status values can be provided with comma separated strings
-      operationId: findPetsByStatus
+      operationId: findPetsByStatu
       parameters:
         - name: status
           in: query
           description: Status values that need to be considered for filter
-          required: true
+          required: false
           explode: true
           schema:
             type: array
